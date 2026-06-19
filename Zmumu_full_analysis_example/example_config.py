@@ -20,13 +20,7 @@ localdir = os.path.dirname(os.path.abspath(__file__))
 # Loading default parameters
 from pocket_coffea.parameters import defaults
 
-default_parameters = defaults.get_default_parameters(group_tags=
-    {
-        "LUM":{ 
-            "Run3-25Prompt-Summer24-NanoAODv15": "prelim"
-        }
-    }
-)
+default_parameters = defaults.get_default_parameters()
 
 
 defaults.register_configuration_dir("config_dir", localdir+"/params")
